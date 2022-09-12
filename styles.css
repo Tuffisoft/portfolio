@@ -34,62 +34,39 @@ header {
     justify-content: center;
 }
 
-#vector_1 {
-    stroke-dasharray: 650;
-    animation: 15s fillSvg backwards;
+#logo {
+    display: flex;
 }
 
-@keyframes fillSvg {
-    0% {
-        stroke-dashoffset: 568;
-    }
-
-    100% {
-        stroke-dasharray: 0;
-    }
+#logo path:nth-child(1) {
+    stroke-dasharray: -503;
+    stroke-dashoffset: -503;
+    animation: line-anim 10s ease forwards;
 }
 
-#vector_2 {
-    stroke-dasharray: 568;
-    animation: 15s fillSvg backwards;
+#logo path:nth-child(2) {
+    stroke-dasharray: 192;
+    stroke-dashoffset: 192;
+    animation: line-anim 10s ease forwards 0.3s;
 }
 
-@keyframes fillSvg {
-    0% {
-        stroke-dashoffset: 700;
-    }
-
-    100% {
-        stroke-dasharray: 0;
-    }
+#logo path:nth-child(3) {
+    stroke-dasharray: 139;
+    stroke-dashoffset: 139;
+    animation: line-anim 2s ease forwards 0.5s;
 }
 
-#vector_3 {
-    stroke-dasharray: 575;
-    animation: 15s fillSvg backwards;
+#logo path:nth-child(4) {
+    stroke-dasharray: 44;
+    stroke-dashoffset: 44;
+    animation: line-anim 2s ease forwards 0.7s;
 }
 
-@keyframes fillSvg {
-    0% {
-        stroke-dashoffset: 575;
-    }
-
-    100% {
-        stroke-dasharray: 0;
-    }
-}
-
-#vector_4 {
-    stroke-dasharray: 400;
-    animation: 15s animate backwards;
-}
-
-@keyframes animate {
+@keyframes line-anim {
     to {
-        stroke-dashoffset: 400;
+        stroke-dashoffset: 0;
     }
 }
-
 
 h1,
 h2 {
